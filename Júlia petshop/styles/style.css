@@ -1,0 +1,133 @@
+@font-face{
+    font-family: Comfortaa-Regular;
+    font-weight: 500;
+    src: url("fonts/comfortaa/Comfortaa-Regular.ttf");
+}
+
+html{
+    scrollbar-width: none;
+}
+
+body {
+    font-size: 1.2em;
+    font-family: "Comfortaa-Regular", 'Trebuchet-MS', sans-serif;
+    background: rgb(2,0,36);
+    background: linear-gradient(rgba(2,0,36,1) 0%, rgba(114,9,121,1) 51%, rgba(166,6,245,1) 80%, rgba(222,0,255,1) 100%); ; 
+    color: azure;
+    margin: 0 auto;
+}
+
+section.header{
+    display: flex;
+    flex-direction: row;
+    margin: 2em 2em;
+    padding: 2em;
+    justify-content: space-between;
+}
+
+section.content{
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+section.content img{
+    margin: 0 auto;
+}
+
+h3.titulo{
+    margin-bottom: 5em;
+}
+
+section.content h4{
+    font-size: 1.25em;
+    color: rgb(255, 156, 206);
+}
+
+h1{
+    font-size: 2.85em;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+i {
+    color: hotpink;
+    cursor: pointer;
+    transition: all .5s ease 0s;
+}
+
+i:hover{
+    color: #f6daf6;
+}
+
+ul{
+    cursor: default;
+}
+
+li a {
+    text-decoration: none;
+    color: azure;
+    display:inline-block;
+    margin:0;
+    transition: all .5s ease 0s;
+}
+
+li a:hover{
+    color: #f821f5;
+}
+
+li a:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #f821f5;  
+    transform: scaleX(0);  
+    transition: transform 800ms ease-in-out;
+}
+
+  li a:hover:after {
+   transform: scaleX(1);
+}
+
+header{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li{
+    padding: 0 10px;
+    display: inline-block;
+}
+
+fieldset {
+    display: inline-block; 
+    width: 1200px;
+}
+
+section.small-form{
+    text-align: center;
+    display: none;
+}
+
+section.small-form input[type="text"], section.small-form textarea{
+    margin-bottom: 10px ;
+}
+
+section.small-form input[type="submit"] {
+    margin-bottom: 40px;
+}
+
+input[type="submit"]{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(115, 3, 66);
+    cursor: pointer;
+    color: #f6daf6;
+    border: 1px solid transparent;
+}
